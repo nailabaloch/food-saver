@@ -1,0 +1,359 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --primary: '';
+    --secondary: '';
+    --accent: '';
+    --poppin: '';
+}
+
+.header {
+    text-transform: uppercase;
+}
+
+.topBar {
+    width: 100%;
+    padding: 5px 0;
+    background-color: #000;
+}
+
+.topBar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.topBar ul li,
+.topBar ul li a {
+    font-size: 14px;
+    color: white;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.topBar ul li {
+    padding: 0 0;
+}
+
+.topBar .links li {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.topBar .links li:first-child {
+    border: 0;
+}
+
+.header .nav-link {
+    color: var(--black) !important;
+    text-decoration: none;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.carousel-inner .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.btn-theme {
+    width: fit-content;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    border: 2px solid var(--black);
+    background-color: transparent;
+    color: var(--black) !important;
+    transition: 0.5s;
+}
+
+.btn-theme.invert {
+    background-color: var(--black);
+    color: var(--white) !important;
+    font-size: 15px;
+}
+
+.btn-theme:hover {
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--black);
+    background-color: var(--black);
+    color: var(--white) !important;
+}
+
+section {
+    padding-block: 6rem;
+}
+
+.aboutSection {
+    padding-block: 10rem;
+    background: url(https://www.sharkys.com/wp-content/uploads/2023/01/power-plate-with-wild-alaska-salmon.jpg) no-repeat center left / cover;
+}
+
+.showcaseSection {
+    text-align: center;
+}
+
+.infoSection {
+    position: relative;
+    /* background-color: rebeccapurple; */
+    /* margin-bottom: 4rem; */
+    background: url(../img/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.avif) right center no-repeat;
+    /* background-size: cover; */
+}
+
+.cardd img {
+    width: 100%;
+    height: 300px;
+}
+
+.cardd {
+    /* padding: 20px; */
+    text-align: center;
+    transition: 0.5s;
+    margin: 20px;
+    width: 30%;
+    /* padding-top: 20px; */
+}
+
+.cardd img {
+    width: 100%;
+}
+
+.cardd:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -5px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .cardd {
+        width: 20%;
+        margin: 10px0 10px;
+    }
+}
+
+@media (max-width:795px) {
+    .cardd {
+        width: 50%;
+    }
+}
+
+@media (max-width:391px) {
+    .cardd {
+        width: 100%;
+    }
+}
+
+.login-form input,
+textarea,
+.form-control {
+    border-radius: 0;
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+
+.login-form a {
+    color: black;
+}
+
+.login-form a:hover {
+    color: #00435e;
+}
+
+.btn-theme:hover {
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
+.pass {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.login-form {
+    width: 100%;
+    padding: 5rem 0;
+    display: grid;
+    place-items: center;
+}
+
+.registar a {
+    text-decoration: none;
+    background-color: "#eee";
+    color: #ccc;
+}
+
+.kk img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.filter h6 {
+    border-left: 3px solid black;
+}
+
+.pro a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.pro a:hover {
+    border: none;
+    color: white;
+    background-color: #00435e;
+}
+
+.moreSection {
+    background-color: #eeee;
+    padding-block: 4rem;
+}
+
+.moreSection img {
+    height: 400px;
+}
+
+.hello {
+    background-color: white;
+}
+
+.showcaseSection h1 {
+    font-weight: 600;
+}
+
+.pagetitleBanner {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.cont {
+    background-color: #eee;
+    width: 100%;
+}
+
+.sign {
+    background-image: url(../img/yyyy.avif);
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.login-form {
+    background-color: #eee;
+}
+
+.footer {
+    color: #fff;
+    background-color: #00435e;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer i {
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .btn-theme {
+        padding: 10px;
+    }
+}
+
+
+/* @media screen and (max-width:992px) {
+    .carousel-inner {
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width:768px) {
+    .carousel-inner .carousel-item img {
+        object-fit: cover;
+        object-position: top right;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .btn {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .imagee {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .imgs {
+        width: 100%;
+    }
+}
+
+.preloader {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: var(--white);
+    z-index: 999999;
+}
+
+.preloader h2 {
+    animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.notyf__toast {
+    margin-top: 6em !important;
+}
+
+.login-form .just-validate-error-field,
+.login-form input.form-control.just-validate-error-field,
+textarea.form-control.just-validate-error-field {
+    border-color: rgb(255 0 0) !important;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-repeat: no-repeat;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23B81111'%3E%3Ccircle cx='6' cy='6' r='4.5'/%3E%3Cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3E%3Ccircle cx='6' cy='8.2' r='.6' fill='%23B81111' stroke='none'/%3E%3C/svg%3E");
+}
